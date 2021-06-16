@@ -6,5 +6,5 @@ output "organization_name" {
 output "organization_token" {
   description = "Terraform organization token."
   value       = tfe_organization_token.org_token.token
-  sensitive   = true
+  sensitive   = false
 }
