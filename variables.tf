@@ -9,7 +9,7 @@ variable "organization_email" {
 }
 
 variable "terraform_cloud_auth_token" {
-  description = "First level Terraform Cloud authentication token. Must be setup before hand, preferably when first registering the Terraform Cloud account."
+  description = "First level Terraform Cloud authentication token. Must be setup beforehand, preferably when first registering the Terraform Cloud account."
   type        = string
   sensitive   = true
 }

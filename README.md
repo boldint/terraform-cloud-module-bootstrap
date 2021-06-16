@@ -34,7 +34,7 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | <a name="input_organization_email"></a> [organization\_email](#input\_organization\_email) | Terraform Cloud Organization owner email. | `string` | n/a | yes |
 | <a name="input_organization_name"></a> [organization\_name](#input\_organization\_name) | Terraform Cloud Organization name. | `string` | n/a | yes |
-| <a name="input_terraform_cloud_auth_token"></a> [terraform\_cloud\_auth\_token](#input\_terraform\_cloud\_auth\_token) | First level Terraform Cloud authentication token. Must be setup before hand, preferably when first registering the Terraform Cloud account. | `string` | n/a | yes |
+| <a name="input_terraform_cloud_auth_token"></a> [terraform\_cloud\_auth\_token](#input\_terraform\_cloud\_auth\_token) | First level Terraform Cloud authentication token. Must be setup beforehand, preferably when first registering the Terraform Cloud account. | `string` | n/a | yes |
 
 ## Outputs
 
