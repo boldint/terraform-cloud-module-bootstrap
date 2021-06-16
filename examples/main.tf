@@ -14,6 +14,10 @@ provider "azurerm" {
 
 provider "sops" {}
 
+resource "random_id" "random" {
+  byte_length = 8
+}
+
 data "sops_file" "tfe_secrets" {
   source_file = "secrets.yaml"
 }
@@ -21,7 +25,7 @@ data "sops_file" "tfe_secrets" {
 module "org" {
   source = "../"
 
-  organization_name          = "boldint_azure_poc"
-  organization_email         = "bold.agileit.devops@devoteam.com"
+  organization_name          = "test-${random_id.random.hex}-org"
+  organization_email         = "test-${random_id.random.hex}-org@test.com"
   terraform_cloud_auth_token = data.sops_file.tfe_secrets.data["token"]
 }
